@@ -16,4 +16,4 @@ USER bridge-1
 
 EXPOSE 7004
 
-CMD ["uvicorn", "bridge:app", "--host", "0.0.0.0", "--port", "7004", "--workers", "4", "--proxy-headers", "--forwarded-allow-ips", "*", "--log-level", "info"]
+CMD ["uvicorn", "src.bridge:app", "--host", "0.0.0.0", "--port", "7004", "--workers", "4", "--proxy-headers", "--forwarded-allow-ips", "*", "--log-level", "info"]
